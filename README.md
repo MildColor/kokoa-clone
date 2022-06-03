@@ -1,3 +1,3 @@
 # Kokoa Clopne 2020 Update
 
-CSS got so much better!
+Html & CSS are so much fun!
