@@ -1,0 +1,62 @@
+@import "reset.css";
+/* components */
+@import "components/play-data.css";
+@import "components/top-nav.css";
+@import "components/one-song.css";
+@import "components/play-btns.css";
+@import "components/progress-bar.css";
+
+body {
+  background-color: #f4f4f5;
+}
+main {
+  margin: 70px;
+  display: flex;
+  width: 100%;
+}
+
+.screen {
+  width: 450px;
+  height: 1000px;
+  background-color: skyblue;
+  border-radius: 40px;
+  padding: 0px 30px;
+  margin-right: 50px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+  font-size: 20px;
+}
+.btns span {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.btns__shuffle {
+  background-color: palevioletred;
+  color: white;
+}
+
+.btns__likes {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btns__likes > i {
+  margin-right: 5px;
+  color: palevioletred;
+}
+.playing-time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}

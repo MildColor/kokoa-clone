@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+nav {
+  position: relative;
+}
+
+.topnav-bar {
+  background-color: palevioletred;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+.topnav-bar__column--top span:nth-child(2) {
+  font-size: 25px;
+  font-weight: 600;
+}
+.topnav-bar__column--top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.topnav-bar__column--bottom {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  position: absolute;
+  margin-top: 60px;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  background-color: white;
+}
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+input {
+  width: 90%;
+  border: 0px;
+  font-size: 15px;
+}
+form > i {
+  position: absolute;
+  right: 10px;
+  bottom: 28px;
+  opacity: 0.3;
+}
+
+main {
+  padding-top: 150px;
+  padding: 175px 20px 0px 20px;
+}
+.category-title {
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+
+.recommend-book {
+  display: flex;
+}
+
+.book-cover {
+  height: 500px;
+  width: 375px;
+  border-radius: 40px;
+}
+.recommend-book__column:nth-child(2) {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -2;
+}
+.book-info span {
+  margin-bottom: 45px;
+}
+
+.book-info span:first-child {
+  font-size: 45px;
+  font-weight: 500;
+}
+.book-info span:nth-child(2) {
+  display: flex;
+  font-size: 30px;
+  opacity: 0.3;
+}
+
+.book-info span:nth-child(3) {
+  color: rgb(245, 215, 46);
+}
+.book-info span:nth-child(3) > i {
+  margin-right: 5px;
+}
+
+.book-genre {
+  display: flex;
+}
+
+.book-genre span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: 50px;
+  margin-right: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 25px 20px 25px 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.btns__bookmark {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(245, 215, 46);
+  border-radius: 50%;
+  position: relative;
+  z-index: -2;
+}
+
+.btns__bookmark i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btns__booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 75px;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+}
+.booklist {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.recommend__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.book-cover__sm {
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.book-rate {
+  color: rgb(245, 215, 46);
+}
+.book-rate i {
+  margin-right: 10px;
+}
+
+.author-info {
+  display: flex;
+}
+.popular-author {
+  width: 250px;
+  height: 300px;
+  border-radius: 15px;
+}
+.author-text {
+  margin-left: 50px;
+}
+.author-text p:first-child {
+  font-size: 30px;
+  font-weight: 500;
+}
+.author-text p:nth-child(2) {
+  font-size: 20px;
+  opacity: 0.3;
+}

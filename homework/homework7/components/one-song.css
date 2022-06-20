@@ -1,0 +1,60 @@
+.song-list:focus-within .one-song {
+  border: 10px solid black;
+}
+
+.one-song,
+.playing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  margin-top: 15px;
+}
+.one-song {
+  background-color: azure;
+  border-radius: 25px;
+}
+
+.playing {
+  width: 400px;
+  height: 60px;
+  background-color: palevioletred;
+  border-radius: 50px;
+}
+
+.one-song__column {
+  display: flex;
+  height: 100%;
+}
+.one-song__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  margin-right: 25px;
+}
+
+.one-song__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.one-song__column > i {
+  opacity: 0.5;
+}
+
+.one-song__text span:first-child {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.one-song__text span:last-child {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.one-song__text__playing {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
