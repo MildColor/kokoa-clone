@@ -1,0 +1,78 @@
+.play-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  color: white;
+  position: relative;
+}
+.play-btns-playing {
+  width: 100%;
+  margin: 100px 0;
+  color: palevioletred;
+  position: relative;
+}
+.play-btns__play-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: palevioletred;
+  position: relative;
+}
+.play-btns__play-circle .fa-pause {
+  color: white;
+}
+
+.play-btns-playing > i:first-child,
+.play-btns-playing > i:last-child {
+  opacity: 0.3;
+}
+
+input {
+  position: fixed;
+  left: -9999px;
+}
+.toggleBtn__first,
+.toggleBtn__second {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.play-btns__change1,
+.play-btns__change2 {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+.play-btns__change2 .fa-play {
+  color: white;
+}
+@keyframes DisappearBtn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#toggleBtn__first:checked ~ .play-btns__change1,
+#toggleBtn__second:checked ~ .play-btns__change2 {
+  animation: DisappearBtn 0.5s ease-in-out forwards;
+}
+
+#toggleBtn__first:checked ~ .toggleBtn__first,
+#toggleBtn__second:checked ~ .toggleBtn__second {
+  opacity: 0;
+  z-index: 9999;
+}

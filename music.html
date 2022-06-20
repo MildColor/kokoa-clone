@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/music.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Music player</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="screen">
+        <div class="top-nav">
+          <a href="friends.html"><i class="fas fa-arrow-left fa-lg"></i></a>
+          <i class="fas fa-search fa-lg"></i>
+        </div>
+        <div class="play-data">
+          <div class="play-data__column">
+            <img
+              class="play-data__img"
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/939/445/80939445_1492155836053_1_600x600.JPG/dims/resize/Q_80,0"
+            />
+          </div>
+          <div class="play-data__column">
+            <h2>Tyler, The Creator</h2>
+            <h5>Rap, Hip-Hop</h5>
+          </div>
+        </div>
+        <div class="btns">
+          <span class="btns__shuffle">Shuffle</span>
+          <span class="btns__likes"> <i class="fas fa-heart"></i> 212971 </span>
+        </div>
+        <a href="nowplaying.html">
+          <div class="song-list">
+            <div class="one-song">
+              <div class="one-song__column">
+                <img
+                  class="one-song__img"
+                  src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/939/445/80939445_1492155836053_1_600x600.JPG/dims/resize/Q_80,0"
+                />
+                <div class="one-song__text">
+                  <span>HYOLYN & CHANGMO</span>
+                  <span>BLUE MOON</span>
+                </div>
+              </div>
+              <div class="one-song__column">
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+              </div>
+            </div>
+
+            <div class="one-song">
+              <div class="one-song__column">
+                <img
+                  class="one-song__img"
+                  src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/387/972/80387972_1387333685275_1_600x600.JPG/dims/resize/Q_80,0"
+                />
+                <div class="one-song__text">
+                  <span>Beenzino</span>
+                  <span>Dali, Van, Picasso</span>
+                </div>
+              </div>
+              <div class="one-song__column">
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+              </div>
+            </div>
+
+            <div class="one-song">
+              <div class="one-song__column">
+                <img
+                  class="one-song__img"
+                  src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/925/644/80925644_1487816476506_1_600x600.JPG/dims/resize/Q_80,0"
+                />
+                <div class="one-song__text">
+                  <span>Hash Swan</span>
+                  <span>Whitney (Feat. The Quiett & Dok2)</span>
+                </div>
+              </div>
+              <div class="one-song__column">
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+              </div>
+            </div>
+
+            <div class="one-song">
+              <div class="one-song__column">
+                <img
+                  class="one-song__img"
+                  src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/082/086/297/82086297_1623331529029_1_600x600.JPG/dims/resize/Q_80,0"
+                />
+                <div class="one-song__text">
+                  <span>Maroon5</span>
+                  <span>Beautiful Mistakes</span>
+                </div>
+              </div>
+              <div class="one-song__column">
+                <i class="fas fa-ellipsis-v fa-lg"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class="one-song playing">
+          <div class="one-song__column">
+            <div class="one-song__text one-song__text__playing">
+              <span>Tyler, the Creator</span>
+              <span>earfquake</span>
+            </div>
+          </div>
+          <div class="one-song__column">
+            <div class="play-btns">
+              <i class="fas fa-step-backward"></i>
+              <input type="checkbox" id="toggleBtn__first" />
+              <label for="toggleBtn__first" class="toggleBtn__first"
+                ><i class="fas fa-pause fa-2x"></i
+              ></label>
+              <div class="play-btns__change1">
+                <i class="fas fa-play fa-2x"></i>
+              </div>
+              <i class="fas fa-step-forward"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/ff1bc848ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

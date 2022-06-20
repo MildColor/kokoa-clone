@@ -40,6 +40,7 @@
 }
 #splash-screen {
   background-color: var(--yellow);
+  background-size: cover;
   position: absolute;
   width: 100vw;
   height: 100vh;

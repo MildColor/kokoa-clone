@@ -12,6 +12,7 @@
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
 @import "components/no-mobile.css";
+@import "components/progress-bar.css";
 
 /*screens*/
 @import "screens/login.css";
@@ -23,10 +24,14 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  height: 200vh;
+  height: 150vh;
   color: #2e363e;
 }
 
 .main-screen {
   padding: 0px var(--horizontal-space);
+}
+
+a {
+  text-decoration-line: none;
 }

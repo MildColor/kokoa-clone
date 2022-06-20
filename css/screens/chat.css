@@ -34,13 +34,46 @@
     transform: none;
   }
 }
+
+@keyframes messageReception {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  1% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .main-chat {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.message-row__first {
   animation: fadeIn 0.8s linear;
 }
+.message-row__second {
+  opacity: 0;
+  animation: messageReception 0.8s linear forwards;
+  animation-delay: 2s;
+}
+.message-row__third {
+  opacity: 0;
+  animation: messageReception 0.8s linear forwards;
+  animation-delay: 4s;
+}
+.message-row__4th {
+  opacity: 0;
+  animation: messageReception 0.8s linear forwards;
+  animation-delay: 6s;
+}
+
 .chat__timestamp {
   color: white;
   background-color: #92a4b2;
@@ -55,7 +88,7 @@
   display: flex;
   margin-bottom: 25px;
 }
-.message-row img {
+.message-row > img {
   width: 50px;
   height: 50px;
   border-radius: 40%;
@@ -88,6 +121,9 @@
 
 .message-row--own {
   justify-content: flex-end;
+  opacity: 0;
+  animation: messageReception 0.8s linear forwards;
+  animation-delay: 8s;
 }
 
 .message-row--own .message__bubble {
@@ -100,6 +136,16 @@
 
 .message-row--own .message__info {
   flex-direction: row-reverse;
+}
+
+.message__bubble__photo {
+  background-color: #abc1d1;
+}
+.message__photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5%;
 }
 
 .reply {
@@ -171,9 +217,9 @@
 }
 /* 위의 선택자들이 변할때의 transition 을 설정해준것 */
 
-.reply:focus-within .reply__column:first-child,
-.reply:focus-within .fa-smile,
-.reply:focus-within button {
+.reply__column__text:focus-within .reply__column:first-child,
+.reply__column__text:focus-within .fa-smile,
+.reply__column__text:focus-within button {
   opacity: 0;
 }
 /* .reply:focus-within 되었을 때 뒤의 선택자가 변하는데 opacity가 0이 되도록 변한다.  */
@@ -185,4 +231,33 @@
 /* reply내부의 요소가 focus되면 input이 변하는데 변화하는 것을 설정해준것. width는 길이가늘어나는데 그냥 늘어나면 화면 밖으로 나가게 되니까 translateX를 한것이고, focus within되면 아래로 80px가게 되어있는데 input창이 사라지지 않게 다시 -80px해준것이다.   */
 .reply:focus-within {
   transform: translateY(80px);
+}
+.showing-pic {
+  display: flex;
+  position: absolute;
+  height: 320px;
+  width: 100%;
+  top: -80px;
+  right: 0;
+  background-color: white;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+.showing-pic__pics {
+  display: flex;
+  padding: 10px 10px 50px 10px;
+}
+.showing-pic__pics img {
+  padding-right: 10px;
+}
+
+#toggleBtn {
+  position: fixed;
+  left: 9999px;
+}
+
+#toggleBtn:checked ~ .showing-pic {
+  transform: translateY(-230px);
+  opacity: 1;
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/music.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Music player</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="screen screen-playing">
+        <div class="top-nav">
+          <a href="friends.html"><i class="fas fa-arrow-left fa-lg"></i></a>
+          <i class="fas fa-ellipsis-v fa-lg"></i>
+        </div>
+        <div class="play-data play-data__playing">
+          <div class="play-data__column">
+            <img
+              class="play-data__img play-data__img--lg"
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/939/445/80939445_1492155836053_1_600x600.JPG/dims/resize/Q_80,0"
+            />
+          </div>
+          <div class="play-data__column play-data__column__playing">
+            <h2>Blue Moon</h2>
+            <h5>HYOLYN & CHANGMO</h5>
+          </div>
+        </div>
+        <div class="playing-time">
+          <span>1:56</span>
+          <span>2:21</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__container">
+            <div class="progress-bar__inner">
+              <div class="progress-bar__dot"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="play-btns play-btns-playing">
+          <i class="fas fa-repeat fa-lg"></i>
+          <i class="fas fa-step-backward fa-2x"></i>
+
+          <input type="checkbox" id="toggleBtn__second" />
+          <label for="toggleBtn__second" class="toggleBtn__second">
+            <span class="play-btns__play-circle"
+              ><i class="fas fa-pause fa-2x"></i
+            ></span>
+          </label>
+
+          <div class="play-btns__change2 play-btns__change2--move">
+            <span class="play-btns__play-circle"
+              ><i class="fas fa-play fa-2x"></i>
+            </span>
+          </div>
+          <i class="fas fa-step-forward fa-2x"></i>
+          <i class="fas fa-random fa-lg"></i>
+        </div>
+      </div>
+      <div class="video_box">
+        <iframe
+          width="480"
+          height="160"
+          src="https://www.youtube.com/embed/syb8w0qBv9k?autoplay=1&mute=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/ff1bc848ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

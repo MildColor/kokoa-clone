@@ -1,0 +1,129 @@
+@import "reset.css";
+/* components */
+@import "components_music/play-data.css";
+@import "components_music/top-nav.css";
+@import "components_music/one-song.css";
+@import "components_music/play-btns.css";
+@import "components_music/progress-bar.css";
+
+body {
+  background: linear-gradient(137deg, #fff6b7, #f77c99, #6578f2, #c2ffd8);
+  background-size: 1000% 1000%;
+  animation: backgradation 15s ease infinite;
+}
+@keyframes backgradation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.screen {
+  width: 450px;
+  height: 1000px;
+  background-color: skyblue;
+  border-radius: 40px;
+  padding: 0px 30px;
+  position: relative;
+  box-shadow: 15px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+  font-size: 20px;
+}
+.btns span {
+  height: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.btns__shuffle {
+  background-color: palevioletred;
+  color: white;
+}
+
+.btns__likes {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.3);
+}
+.btns__shuffle,
+.btns__likes {
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+@keyframes heartDeco {
+  0% {
+    transform: none;
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(-360deg);
+  }
+  100% {
+    transform: scale(1.15);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    filter: hue-rotate(0deg);
+  }
+}
+@keyframes pulsingheart {
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.btns__likes > i {
+  margin-right: 5px;
+  color: palevioletred;
+  animation: heartDeco 15s infinite ease;
+  animation: pulsingheart 1s infinite ease;
+  will-change: transform;
+}
+
+.playing-time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.playing {
+  position: sticky;
+  bottom: 0;
+}
+
+.video_box {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  bottom: -130px;
+  right: 105px;
+}
